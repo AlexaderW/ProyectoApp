@@ -19,6 +19,12 @@ public class Login extends AppCompatActivity {
     }
 
     private void asignarReferencias(){
+        btnIniciarSesion=findViewById(R.id.btnIniciarSesion);
+        btnIniciarSesion.setOnClickListener(view -> {
+            Intent intent =new Intent(Login.this, Menu.class);
+            startActivity(intent);
+        });
+
         btnRegistrar=findViewById(R.id.bntRegistrar);
         btnRegistrar.setOnClickListener(view -> {
             Intent intent =new Intent(Login.this, NewAcount.class);

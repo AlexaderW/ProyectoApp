@@ -41,9 +41,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#002b47"
-        >
+        android:layout_height="181dp"
+        android:background="#002b47">
 
         <Button
             android:id="@+id/btnIniciar"
