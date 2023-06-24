@@ -44,6 +44,7 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
 
         navigationView.setNavigationItemSelectedListener(this);
 
+        navigationView.setCheckedItem(R.id.nav_home);
     }
 
     @Override
@@ -63,14 +64,21 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
     int id = menuItem.getItemId();
 
     if(id==R.id.nav_home){
-
+        Intent intent =new Intent(Menu.this, Menu.class);
+        startActivity(intent);
         }
     if(id==R.id.nav_perfil){
-
-
+        Intent intent = new Intent(Menu.this,Perfil.class);
+        startActivity(intent);
         }
-
-
+    if(id==R.id.nav_historial){
+        Intent intent =new Intent(Menu.this, Historial.class);
+        startActivity(intent);
+    }
+    if (id==R.id.nav_carrito){
+        Intent intent = new Intent(Menu.this, Carrito.class);
+        startActivity(intent);
+    }
 
         return true;
 

@@ -17,21 +17,10 @@
 
         <item
 
-            android:id="@+id/nav_descuentos"
-            android:title="Descuentos"
-            android:icon="@drawable/icono_descuento" />
-
-        <item
-
             android:id="@+id/nav_historial"
             android:title="Historial"
             android:icon="@drawable/icono_historial" />
 
-        <item
-
-            android:id="@+id/nav_favoritos"
-            android:title="Favoritos"
-            android:icon="@drawable/icono_favorito" />
 
         <item
 

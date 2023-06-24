@@ -16,13 +16,7 @@
             android:name=".Carrito"
             android:exported="false" />
         <activity
-            android:name=".Favoritos"
-            android:exported="false" />
-        <activity
             android:name=".Historial"
-            android:exported="false" />
-        <activity
-            android:name=".Descuentos"
             android:exported="false" />
         <activity
             android:name=".Perfil"
