@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">chacomboApp</string>
+    <string name="app_name"></string>
     <string name="navi_drawer_open">Open navigator drawer</string>
     <string name="navi_drawer_close">Close navigator drawer</string>
 </resources>

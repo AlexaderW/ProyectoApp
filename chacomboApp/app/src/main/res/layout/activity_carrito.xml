@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Carrito1">
+    >
 
     <TextView
         android:id="@+id/textView13"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnPagar"
         android:layout_width="227dp"
         android:layout_height="63dp"
         android:layout_marginEnd="92dp"
@@ -33,16 +33,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back_arrow" />
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="411dp"
@@ -50,8 +40,9 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
 
         <LinearLayout
             android:layout_width="200dp"
@@ -65,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingBottom="10dp"
-                android:text="Nombre del Producto "
+                android:text="1 kilo"
                 android:textSize="16sp" />
 
             <ImageView
@@ -80,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Precio"
+                android:text="s/80"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -97,11 +88,11 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingBottom="10dp"
-                android:text="Nombre del Producto"
+                android:text="Porcion de camote"
                 android:textSize="16sp" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/camote"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 app:srcCompat="@drawable/camote" />
@@ -112,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="10dp"
-                android:text="Precio"
+                android:text="s/6"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -131,63 +122,19 @@
             android:layout_width="200dp"
             android:layout_height="250dp"
             android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:text="Nombre del Producto"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/sarsa" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:text="Precio"
-                android:textSize="16sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="250dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView24"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="10dp"
-                android:text="Nombre del Producto"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                app:srcCompat="@drawable/cafe" />
-
-            <TextView
-                android:id="@+id/textView25"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingTop="10dp"
-                android:text="Precio"
-                android:textSize="16sp" />
-        </LinearLayout>
+            android:orientation="vertical"/>
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtnBackCompras"
+        android:layout_width="62dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

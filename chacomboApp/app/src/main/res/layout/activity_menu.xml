@@ -9,7 +9,6 @@
     tools:context=".Menu"
     tools:openDrawer="start">
 
-
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
@@ -19,14 +18,194 @@
         app:menu="@menu/main_menu" />
 
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="0dp"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#00008577"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/icono_menu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platos"
+        android:paddingTop="30dp"
+        android:paddingLeft="160dp"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:paddingTop="70dp"
+        >
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:background="#00008577"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:navigationIcon="@drawable/icono_menu" />
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="1 kilo"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/chicharron"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/chicharron1k" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="s/80"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imgBtnChicharron"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/icono_agregar" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Porcion de camote"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/camote"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/camote" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="s/6"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icono_agregar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:paddingTop="340dp"
+        >
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Sarsa criolla"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/sarsa" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="s/3"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icono_agregar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Café pasado"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/cafe" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="s/3"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/icono_agregar" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
