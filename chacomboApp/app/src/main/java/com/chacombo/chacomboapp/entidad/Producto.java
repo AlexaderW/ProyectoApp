@@ -7,13 +7,15 @@ public class Producto {
     private String descripcion_prod;
     private double precio_prod;
     private String categoria_prod;
+    private String imagen_prod;
 
-    public Producto(int id_prod, String nombre_prod, String descripcion_prod, double precio_prod, String categoria_prod) {
+    public Producto(int id_prod, String nombre_prod, String descripcion_prod, double precio_prod, String categoria_prod, String imagen_prod) {
         this.id_prod = id_prod;
         this.nombre_prod = nombre_prod;
         this.descripcion_prod = descripcion_prod;
         this.precio_prod = precio_prod;
         this.categoria_prod = categoria_prod;
+        this.imagen_prod = imagen_prod;
     }
 
     public int getId_prod() {
@@ -54,5 +56,13 @@ public class Producto {
 
     public void setCategoria_prod(String categoria_prod) {
         this.categoria_prod = categoria_prod;
+    }
+
+    public String getImagen_prod() {
+        return imagen_prod;
+    }
+
+    public void setImagen_prod(String imagen_prod) {
+        this.imagen_prod = imagen_prod;
     }
 }
