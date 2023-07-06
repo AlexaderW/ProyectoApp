@@ -50,6 +50,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".Ubicanos_mapa"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDIvoaCvsw6Eh82oMfCCDvvCwdcxYcKuuQ" />
