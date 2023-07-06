@@ -96,7 +96,6 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
         Intent intent = new Intent(Menu.this, Carrito.class);
         startActivity(intent);
     }
-
         return true;
 
     }
