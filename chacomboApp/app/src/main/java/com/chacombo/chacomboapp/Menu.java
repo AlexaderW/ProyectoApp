@@ -19,6 +19,9 @@ import com.google.android.material.navigation.NavigationView;
 
 public class Menu extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    //Para implementar el viewerHolder hay que crear el un recyclerView donde mediante un adaptador se implemente
+    // y se pueda mostrar los productos subidos asi mismo para las clases de Pasarela de pago y el carro de compras
+
     NavigationView navigationView;
     DrawerLayout drawerLayout;
     Toolbar toolbar;

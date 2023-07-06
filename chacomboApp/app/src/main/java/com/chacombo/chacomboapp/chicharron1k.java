@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 public class chicharron1k extends AppCompatActivity {
 
-
+//una vez implementado los DAO esto quedara como una plantilla
     Button menosBtn,masBtn;
     TextView ceroTxt;
     @Override
@@ -23,11 +23,19 @@ public class chicharron1k extends AppCompatActivity {
         masBtn=findViewById(R.id.masBtn);
         ceroTxt=findViewById(R.id.ceroTxt);
 
+//SE DEBE DE SEPARAR ESTO ES SOLO PARA PROBAR DE TODAS MANERAS ESTO PASARA AL CARRITO
+// O DONDE SE DEBA DE GUARDAR NI IDEA UNA VEZ SOLUCIONADO BORRAR ESTE COMENTANRIO
+
         //accion de decremento
         menosBtn.setOnClickListener(view0 -> {
             String valorString0 = ceroTxt.getText().toString();
             int valorInt0 = Integer.parseInt(valorString0);
-            valorInt0--;
+            if(valorInt0>0){
+                valorInt0--;
+            }else{
+                valorInt0=0;
+            }
+
             ceroTxt.setText(String.valueOf(valorInt0));
         });
             //accion de incremento
