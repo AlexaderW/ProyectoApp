@@ -2,67 +2,68 @@ package com.chacombo.chacomboapp.entidad;
 
 public class Producto {
 
-    private int id_prod;
-    private String nombre_prod;
-    private String descripcion_prod;
-    private double precio_prod;
-    private String categoria_prod;
-    private String imagen_prod;
+   private int id_producto;
+   private String nombre_producto;
+   private String descripcion_producto;
+   private Double precio_producto;
+   private String categoria_producto;
+   private String imagen_producto;
 
-    public Producto(int id_prod, String nombre_prod, String descripcion_prod, double precio_prod, String categoria_prod, String imagen_prod) {
-        this.id_prod = id_prod;
-        this.nombre_prod = nombre_prod;
-        this.descripcion_prod = descripcion_prod;
-        this.precio_prod = precio_prod;
-        this.categoria_prod = categoria_prod;
-        this.imagen_prod = imagen_prod;
+   //CONSTRUCTOR
+    public Producto(int id_producto, String nombre_producto, String descripcion_producto, Double precio_producto, String categoria_producto, String imagen_producto) {
+        this.id_producto = id_producto;
+        this.nombre_producto = nombre_producto;
+        this.descripcion_producto = descripcion_producto;
+        this.precio_producto = precio_producto;
+        this.categoria_producto = categoria_producto;
+        this.imagen_producto = imagen_producto;
+    }
+    //GET AND SET
+    public int getId_producto() {
+        return id_producto;
     }
 
-    public int getId_prod() {
-        return id_prod;
+    public void setId_producto(int id_producto) {
+        this.id_producto = id_producto;
     }
 
-    public void setId_prod(int id_prod) {
-        this.id_prod = id_prod;
+    public String getNombre_producto() {
+        return nombre_producto;
     }
 
-    public String getNombre_prod() {
-        return nombre_prod;
+    public void setNombre_producto(String nombre_producto) {
+        this.nombre_producto = nombre_producto;
     }
 
-    public void setNombre_prod(String nombre_prod) {
-        this.nombre_prod = nombre_prod;
+    public String getDescripcion_producto() {
+        return descripcion_producto;
     }
 
-    public String getDescripcion_prod() {
-        return descripcion_prod;
+    public void setDescripcion_producto(String descripcion_producto) {
+        this.descripcion_producto = descripcion_producto;
     }
 
-    public void setDescripcion_prod(String descripcion_prod) {
-        this.descripcion_prod = descripcion_prod;
+    public Double getPrecio_producto() {
+        return precio_producto;
     }
 
-    public double getPrecio_prod() {
-        return precio_prod;
+    public void setPrecio_producto(Double precio_producto) {
+        this.precio_producto = precio_producto;
     }
 
-    public void setPrecio_prod(double precio_prod) {
-        this.precio_prod = precio_prod;
+    public String getCategoria_producto() {
+        return categoria_producto;
     }
 
-    public String getCategoria_prod() {
-        return categoria_prod;
+    public void setCategoria_producto(String categoria_producto) {
+        this.categoria_producto = categoria_producto;
     }
 
-    public void setCategoria_prod(String categoria_prod) {
-        this.categoria_prod = categoria_prod;
+    public String getImagen_producto() {
+        return imagen_producto;
     }
 
-    public String getImagen_prod() {
-        return imagen_prod;
-    }
-
-    public void setImagen_prod(String imagen_prod) {
-        this.imagen_prod = imagen_prod;
+    public void setImagen_producto(String imagen_producto) {
+        this.imagen_producto = imagen_producto;
     }
 }

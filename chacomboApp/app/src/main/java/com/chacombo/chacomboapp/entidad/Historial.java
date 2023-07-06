@@ -4,67 +4,76 @@ import java.time.LocalDate;
 
 public class Historial {
 
-    private  int id_his;
-    private  int pedID_his;
-    private int userID_his;
-    private String fecha_hist;
-    private String descrip_hist;
-    private double total_hist;
+    private int id_historial;
+    private int id_pedido;
+    private int id_usuario;
+    private String fecha_historial;
+    private String descripcion_historial;
+    private double total_historial;
 
-    public Historial(int id_his, int pedID_his, int userID_his, String fecha_hist, String descrip_hist, double total_hist) {
-        this.id_his = id_his;
-        this.pedID_his = pedID_his;
-        this.userID_his = userID_his;
-        this.fecha_hist = fecha_hist;
-        this.descrip_hist = descrip_hist;
-        this.total_hist = total_hist;
+    //CONSTRUCTOR
+    public Historial(int id_historial, int id_pedido, int id_usuario, String fecha_historial, String descripcion_historial, double total_historial) {
+        this.id_historial = id_historial;
+        this.id_pedido = id_pedido;
+        this.id_usuario = id_usuario;
+        this.fecha_historial = fecha_historial;
+        this.descripcion_historial = descripcion_historial;
+        this.total_historial = total_historial;
+    }
+    public Historial(int id_pedido, int id_usuario, String fecha_historial, String descripcion_historial, double total_historial) {
+        this.id_pedido = id_pedido;
+        this.id_usuario = id_usuario;
+        this.fecha_historial = fecha_historial;
+        this.descripcion_historial = descripcion_historial;
+        this.total_historial = total_historial;
     }
 
-    public int getId_his() {
-        return id_his;
+    //GET AND SET
+    public int getId_historial() {
+        return id_historial;
     }
 
-    public void setId_his(int id_his) {
-        this.id_his = id_his;
+    public void setId_historial(int id_historial) {
+        this.id_historial = id_historial;
     }
 
-    public int getPedID_his() {
-        return pedID_his;
+    public int getId_pedido() {
+        return id_pedido;
     }
 
-    public void setPedID_his(int pedID_his) {
-        this.pedID_his = pedID_his;
+    public void setId_pedido(int id_pedido) {
+        this.id_pedido = id_pedido;
     }
 
-    public int getUserID_his() {
-        return userID_his;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public void setUserID_his(int userID_his) {
-        this.userID_his = userID_his;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
-    public String getFecha_hist() {
-        return fecha_hist;
+    public String getFecha_historial() {
+        return fecha_historial;
     }
 
-    public void setFecha_hist(String fecha_hist) {
-        this.fecha_hist = fecha_hist;
+    public void setFecha_historial(String fecha_historial) {
+        this.fecha_historial = fecha_historial;
     }
 
-    public String getDescrip_hist() {
-        return descrip_hist;
+    public String getDescripcion_historial() {
+        return descripcion_historial;
     }
 
-    public void setDescrip_hist(String descrip_hist) {
-        this.descrip_hist = descrip_hist;
+    public void setDescripcion_historial(String descripcion_historial) {
+        this.descripcion_historial = descripcion_historial;
     }
 
-    public double getTotal_hist() {
-        return total_hist;
+    public double getTotal_historial() {
+        return total_historial;
     }
 
-    public void setTotal_hist(double total_hist) {
-        this.total_hist = total_hist;
+    public void setTotal_historial(double total_historial) {
+        this.total_historial = total_historial;
     }
 }

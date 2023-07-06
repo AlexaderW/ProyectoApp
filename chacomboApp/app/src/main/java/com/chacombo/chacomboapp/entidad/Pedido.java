@@ -1,47 +1,54 @@
 package com.chacombo.chacomboapp.entidad;
 
 public class Pedido {
-    private int id_ped;
-    private int userID_ped;
-    private String metodoDepago;
-    private double total_ped;
 
-    public Pedido(int id_ped, int userID_ped, String metodoDepago, double total_ped) {
-        this.id_ped = id_ped;
-        this.userID_ped = userID_ped;
-        this.metodoDepago = metodoDepago;
-        this.total_ped = total_ped;
+    private int id_pedido;
+    private int id_usuario;
+    private String metodoPago_pedido;
+    private Double total_pedido;
+
+    //CONSTRUCTOR
+    public Pedido(int id_pedido, int id_usuario, String metodoPago_pedido, Double total_pedido) {
+        this.id_pedido = id_pedido;
+        this.id_usuario = id_usuario;
+        this.metodoPago_pedido = metodoPago_pedido;
+        this.total_pedido = total_pedido;
+    }
+    public Pedido(int id_usuario, String metodoPago_pedido, Double total_pedido) {
+        this.id_usuario = id_usuario;
+        this.metodoPago_pedido = metodoPago_pedido;
+        this.total_pedido = total_pedido;
+    }
+    //GET AND SET
+    public int getId_pedido() {
+        return id_pedido;
     }
 
-    public int getId_ped() {
-        return id_ped;
+    public void setId_pedido(int id_pedido) {
+        this.id_pedido = id_pedido;
     }
 
-    public void setId_ped(int id_ped) {
-        this.id_ped = id_ped;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public int getUserID_ped() {
-        return userID_ped;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
-    public void setUserID_ped(int userID_ped) {
-        this.userID_ped = userID_ped;
+    public String getMetodoPago_pedido() {
+        return metodoPago_pedido;
     }
 
-    public String getMetodoDepago() {
-        return metodoDepago;
+    public void setMetodoPago_pedido(String metodoPago_pedido) {
+        this.metodoPago_pedido = metodoPago_pedido;
     }
 
-    public void setMetodoDepago(String metodoDepago) {
-        this.metodoDepago = metodoDepago;
+    public Double getTotal_pedido() {
+        return total_pedido;
     }
 
-    public double getTotal_ped() {
-        return total_ped;
-    }
-
-    public void setTotal_ped(double total_ped) {
-        this.total_ped = total_ped;
+    public void setTotal_pedido(Double total_pedido) {
+        this.total_pedido = total_pedido;
     }
 }

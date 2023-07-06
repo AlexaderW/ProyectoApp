@@ -5,19 +5,23 @@ public class Usuario {
     private int id_usuario;
     private String nombre_usuario;
     private String apellido_usuario;
+    private String email_usuario;
     private String contrasenia_usuario;
     private String direccion_usuario;
-    private String numero_usuario;
+    private String telefono_usuario;
 
-    public Usuario(int id_usuario, String nombre_usuario, String apellido_usuario, String contrasenia_usuario, String direccion_usuario, String numero_usuario) {
+    //CONSTRUCTOR
+    public Usuario(int id_usuario, String nombre_usuario, String apellido_usuario, String email_usuario, String contrasenia_usuario, String direccion_usuario, String telefono_usuario) {
         this.id_usuario = id_usuario;
         this.nombre_usuario = nombre_usuario;
         this.apellido_usuario = apellido_usuario;
+        this.email_usuario = email_usuario;
         this.contrasenia_usuario = contrasenia_usuario;
         this.direccion_usuario = direccion_usuario;
-        this.numero_usuario = numero_usuario;
+        this.telefono_usuario = telefono_usuario;
     }
 
+    //GET AND SET
     public int getId_usuario() {
         return id_usuario;
     }
@@ -42,6 +46,14 @@ public class Usuario {
         this.apellido_usuario = apellido_usuario;
     }
 
+    public String getEmail_usuario() {
+        return email_usuario;
+    }
+
+    public void setEmail_usuario(String email_usuario) {
+        this.email_usuario = email_usuario;
+    }
+
     public String getContrasenia_usuario() {
         return contrasenia_usuario;
     }
@@ -58,11 +70,11 @@ public class Usuario {
         this.direccion_usuario = direccion_usuario;
     }
 
-    public String getNumero_usuario() {
-        return numero_usuario;
+    public String getTelefono_usuario() {
+        return telefono_usuario;
     }
 
-    public void setNumero_usuario(String numero_usuario) {
-        this.numero_usuario = numero_usuario;
+    public void setTelefono_usuario(String telefono_usuario) {
+        this.telefono_usuario = telefono_usuario;
     }
 }
