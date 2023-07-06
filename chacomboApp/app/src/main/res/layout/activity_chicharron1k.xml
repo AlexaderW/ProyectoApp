@@ -7,7 +7,7 @@
     tools:context=".chicharron1k">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/prodImage"
         android:layout_width="419dp"
         android:layout_height="283dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/bannerchicharron" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/prodTitleTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -27,10 +27,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/prodImage" />
 
     <TextView
-        android:id="@+id/textView46"
+        android:id="@+id/descriptTxt"
         android:layout_width="376dp"
         android:layout_height="61dp"
         android:layout_marginTop="48dp"
@@ -39,29 +39,64 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintTop_toBottomOf="@+id/prodTitleTxt" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
+        android:layout_marginTop="200dp"
         android:text="agregar al carrito "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptTxt" />
 
     <TextView
-        android:id="@+id/textView47"
+        android:id="@+id/prodText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="282dp"
-        android:text="Precio: s/80 soles"
+        android:text="s/80 "
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptTxt" />
+
+    <TextView
+        android:id="@+id/ceroTxt"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/borde_redondeado"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/masBtn"
+        app:layout_constraintStart_toEndOf="@+id/menosBtn"
+        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+
+    <Button
+        android:id="@+id/menosBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/ceroTxt"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+
+    <Button
+        android:id="@+id/masBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toEndOf="@+id/ceroTxt"
+        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
