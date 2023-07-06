@@ -96,6 +96,11 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
         Intent intent = new Intent(Menu.this, Carrito.class);
         startActivity(intent);
     }
+
+    if (id==R.id.nav_ubicanos){
+            Intent intent = new Intent(Menu.this, Ubicanos_mapa.class);
+            startActivity(intent);
+        }
         return true;
 
     }
