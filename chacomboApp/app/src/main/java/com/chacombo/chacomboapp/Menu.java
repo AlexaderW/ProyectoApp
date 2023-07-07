@@ -69,7 +69,8 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
 
     imgButtonCamote.setOnClickListener(view -> {
 
-
+        Intent intent = new Intent(Menu.this, camote.class);
+        startActivity(intent);
 
 
     });
