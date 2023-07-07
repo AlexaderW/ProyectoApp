@@ -14,7 +14,7 @@ public class PasarelaPago extends AppCompatActivity {
 
     Spinner opcionPspinner;
     String tipoPago[]={"Tarjeta","Efectivo"};
-    ImageButton imgBtnBackCarrito;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +23,8 @@ public class PasarelaPago extends AppCompatActivity {
         asignarReferencias();
     }
     private  void asignarReferencias(){
-        //boton que te manda de vuelta al carro
-        imgBtnBackCarrito = findViewById(R.id.imgBtnBackCarrito);
 
-        imgBtnBackCarrito.setOnClickListener(view -> {
 
-            Intent intent = new Intent(PasarelaPago.this, Carrito.class);
-            startActivity(intent);
-        });
 
         //spinner
         opcionPspinner = findViewById(R.id.opcionPspinner);

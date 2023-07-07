@@ -4,99 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".chicharron1k">
+    tools:context=".camote">
 
     <ImageView
-        android:id="@+id/prodImage"
+        android:id="@+id/prodImage1"
         android:layout_width="419dp"
         android:layout_height="283dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bannerchicharron" />
+        app:srcCompat="@drawable/camotesfondo" />
 
     <TextView
-        android:id="@+id/prodTitleTxt"
+        android:id="@+id/prodTitleTxt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="337dp"
+        android:text="Porcion de Camote"
         android:textSize="20sp"
-        android:text="Chicharron 1 kilo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prodImage" />
+        app:layout_constraintTop_toBottomOf="@+id/prodImage1" />
 
     <TextView
-        android:id="@+id/descriptTxt"
+        android:id="@+id/descriptTxt1"
         android:layout_width="376dp"
         android:layout_height="61dp"
         android:layout_marginTop="48dp"
-        android:text="1 kilo de chanco + camote +cancha + ensalada criolla"
+        android:text="Porcion de camote frito"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prodTitleTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/prodTitleTxt1" />
 
     <Button
-        android:id="@+id/pagarBtn"
+        android:id="@+id/pagarBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
         android:text="Pagar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptTxt1" />
 
     <TextView
-        android:id="@+id/prodText"
+        android:id="@+id/prodText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="282dp"
-        android:text="s/80 "
+        android:text="s/6 "
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.027"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptTxt1" />
 
     <TextView
-        android:id="@+id/ceroTxt"
+        android:id="@+id/ceroTxt1"
         android:layout_width="149dp"
         android:layout_height="48dp"
         android:layout_marginTop="68dp"
         android:background="@drawable/borde_redondeado"
         android:gravity="center"
         android:text="0"
-        app:layout_constraintEnd_toStartOf="@+id/masBtn"
-        app:layout_constraintStart_toEndOf="@+id/menosBtn"
-        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+        app:layout_constraintEnd_toStartOf="@+id/masBtn1"
+        app:layout_constraintStart_toEndOf="@+id/menosBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/prodText1" />
 
     <Button
-        android:id="@+id/menosBtn"
+        android:id="@+id/menosBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:text="-"
         app:layout_constraintEnd_toStartOf="@+id/ceroTxt"
         app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+        app:layout_constraintTop_toBottomOf="@+id/prodText1" />
 
     <Button
-        android:id="@+id/masBtn"
+        android:id="@+id/masBtn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="+"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
-        app:layout_constraintStart_toEndOf="@+id/ceroTxt"
-        app:layout_constraintTop_toBottomOf="@+id/prodText" />
+        app:layout_constraintStart_toEndOf="@+id/ceroTxt1"
+        app:layout_constraintTop_toBottomOf="@+id/prodText1" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

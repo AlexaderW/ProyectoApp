@@ -26,7 +26,7 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
     DrawerLayout drawerLayout;
     Toolbar toolbar;
 
-    ImageButton imgBtnChicharron;
+    ImageButton imgBtnChicharron,imgButtonCamote;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,12 +57,23 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
     private void  asignarReferencias(){
 
     imgBtnChicharron = findViewById(R.id.imgBtnChicharron);
+    imgButtonCamote  =findViewById(R.id.imgButtonCamote);
+
+
+
 
     imgBtnChicharron.setOnClickListener(view -> {
-
         Intent intent = new Intent(Menu.this, chicharron1k.class);
         startActivity(intent);
     });
+
+    imgButtonCamote.setOnClickListener(view -> {
+
+
+
+
+    });
+
 
     }
 
@@ -91,14 +102,6 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
         Intent intent = new Intent(Menu.this,Perfil.class);
         startActivity(intent);
         }
-    if(id==R.id.nav_historial){
-        Intent intent =new Intent(Menu.this, Historial.class);
-        startActivity(intent);
-    }
-    if (id==R.id.nav_carrito){
-        Intent intent = new Intent(Menu.this, Carrito.class);
-        startActivity(intent);
-    }
 
     if (id==R.id.nav_ubicanos){
             Intent intent = new Intent(Menu.this, Ubicanos_mapa.class);

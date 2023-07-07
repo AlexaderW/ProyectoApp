@@ -17,19 +17,6 @@
 
         <item
 
-            android:id="@+id/nav_historial"
-            android:title="Historial"
-            android:icon="@drawable/icono_historial" />
-
-
-        <item
-
-            android:id="@+id/nav_carrito"
-            android:title="Carrito"
-            android:icon="@drawable/icono_carrito" />
-
-        <item
-
             android:id="@+id/nav_ubicanos"
             android:title="Ubicanos"
             android:icon="@drawable/icono_mapa" />
